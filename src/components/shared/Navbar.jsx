@@ -1,30 +1,70 @@
 import Image from 'next/image';
-import React from 'react';
+import React, {useState} from 'react';
 import logo from '../../../public/fullLogo.png'
+import { RiMenuFill } from "react-icons/ri";
+import Link from "next/link";
 
 const Navbar = () => {
+    const [open, setOpen] = useState(false)
     return (
         <div className='bg-[#fff] shadow-xl shadow-[#eeeeee]'>
-        <nav className='flex items-center max-w-[1320px] w-full mx-auto font-montserrat '>
-            <div >
-                <Image
-                    alt="logo"
-                    src={logo}
-                    width={150}
-                    height={100}
-                    className="lg:md:w-[85%] w-[60%] lg:md:h-full h-[80%]"
-                />
-            </div>
+            <nav className='flex items-center justify-between max-w-[1320px] w-full mx-auto font-montserrat relative lg:md:px-0 px-4'>
+                <div >
+                    <Image
+                        alt="logo"
+                        src={logo}
+                        width={120}
+                        height={100}
+                        className="lg:md:w-[100%] w-[90%] lg:md:h-full h-[80%]"
+                    />
+                </div>
 
-            <div className='lg:md:block hidden w-full'>
-                <ul className='flex items-center justify-end gap-x-4 text-lg font-medium text-[#333]'>
-                    <li className='hover:text-[#FE6B01] delay-200 transition-colors'>Home</li>
-                    <li className='hover:text-[#FE6B01] delay-200 transition-colors'>Services</li>
-                    <li className='hover:text-[#FE6B01] delay-200 transition-colors'>Projects</li>
-                    <li className='hover:text-[#FE6B01] delay-200 transition-colors'>Testimonials</li>
-                    <li className='hover:text-[#FE6B01] delay-200 transition-colors'>Contact</li>
-                </ul>                
-            </div>
+                <div className='lg:md:block hidden w-full'>
+                    <ul className='flex items-center justify-end gap-x-4 text-[16px] font-medium text-[#333]'>
+                        <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
+                            <Link href="/home">Home</Link>
+                        </li>
+                        <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
+                            <Link href="/services">Services</Link>
+                        </li>
+                        <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
+                            <Link href="/projects">Projects</Link>
+                        </li>
+                        <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
+                            <Link href="/testimonials">Testimonials</Link>
+                        </li>
+                        <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
+                            <Link href="/contact">Contact</Link>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className='lg:md:hidden block w-full text-end '>
+                            <button onClick={() => setOpen(!open)} className="text-[#FE6B01] text-2xl"><RiMenuFill /></button>
+                            {open === true &&
+                            <div className="w-full flex justify-end">
+                        <ul className="menu absolute w-56 rounded-box p-4 bg-[#f9e2d2] text-[14px] font-semibold text-[#333] z-[100] ">
+                                {/* Sidebar content here */}
+                                <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
+                                    <Link href="/home">Home</Link>
+                                </li>
+                                <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
+                                    <Link href="/services">Services</Link>
+                                </li>
+                                <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
+                                    <Link href="/projects">Projects</Link>
+                                </li>
+                                <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
+                                    <Link href="/testimonials">Testimonials</Link>
+                                </li>
+                                <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
+                                    <Link href="/contact">Contact</Link>
+                                </li>
+                            </ul>
+                            </div> 
+}
+                        </div>
+            
             </nav>
         </div>
     );

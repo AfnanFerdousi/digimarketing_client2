@@ -1,10 +1,14 @@
 import React from 'react';
+import Head from 'next/head';
 import MainLayout from './../layout/MainLayout';
 import Banner from './../components/home/Banner'
 
 const Home = () => {
   return (
     <div>
+      <Head>
+        <title>DigiMarketing Mix | Home</title>        
+      </Head>
       <Banner/>
     </div>
   );

@@ -39,7 +39,7 @@ const Banner = () => {
                     </div>
                     <div className="p-4 text-center w-[75%] border-r-[1px] border-[#ddd]">
                         <div className="text-lg font-bold">
-                            {counted && <CountUp start={0} end={500} duration={4} />}
+                            {counted && <CountUp start={0} end={500} duration={3} />}
                         </div>
                         <div className="text-[#333] font-inter font-medium lg:md:text-[14px] text-[10px]">Campaigns Launched</div>
                     </div>
