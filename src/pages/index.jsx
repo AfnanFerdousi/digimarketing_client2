@@ -3,6 +3,7 @@ import Head from 'next/head';
 import MainLayout from './../layout/MainLayout';
 import Banner from './../components/home/Banner';
 import About from './../components/home/About';
+import Services from './../components/home/Services';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       </Head>
       <Banner />
       <About />
+      <Services />
     </div>
   );
 };

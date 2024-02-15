@@ -3,7 +3,7 @@ import MovingText from '../shared/MovingText';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 const About = () => {
     return (
-        <div className='max-w-[1320px] w-full mx-auto lg:md:px-4 px-4 lg:md:mt-0 mt-[15vh]'>
+        <div className='max-w-[1320px] w-full mx-auto lg:md:px-4 px-4 lg:md:mt-10 mt-[15vh]'>
             <div className='flex justify-between items-center'>
                 <div
                     data-aos="fade-right"
