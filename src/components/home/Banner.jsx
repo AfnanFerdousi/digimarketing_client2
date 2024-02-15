@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import { BsStars } from "react-icons/bs";
 
 const Banner = () => {
     const [counted, setCounted] = useState(false);
@@ -11,7 +12,10 @@ const Banner = () => {
 
     return (
         <div className='lg:md:flex lg:md:flex-row-reverse items-center justify-between max-w-[1320px] lg:md:px-4 px-4 mx-auto h-[90vh] my-auto'>
-            <div>
+            <div data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500">
                 <Player
                     autoplay
                     loop
@@ -21,7 +25,9 @@ const Banner = () => {
                     <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
                 </Player>
             </div>
-            <div>
+            <div data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <h3 className='text-[#333] lg:md:text-[2.4rem] text-[1.8rem] font-bold'>Unlock Your Brand&apos;s Full Potential</h3>
                 <h3 className='text-[#3f3e3e] lg:md:text-2xl text-md font-semibold mt-2'>From Digital Domination to Creative Brilliance, We&apos;re Your Complete Solution for Success!</h3>
                 <div className="flex items-center rounded-lg shadow lg:md:mt-12 mt-8 bg-[#f9e2d2] text-[#FE6B01]">
@@ -44,6 +50,8 @@ const Banner = () => {
                         <div className="text-[#333] font-inter font-medium lg:md:text-[14px] text-[10px]">Campaigns Launched</div>
                     </div>
                 </div>
+
+                <button className='bg-[#FE6B01] font-inter font-medium lg:md:text-lg text-[14px] text-[#fff] py-3 px-4 rounded-md mt-8 flex items-center gap-x-2'>Give your imagination a shot <span className='lg:md:text-2xl text-xl'><BsStars /></span></button>
             </div>
             
         </div>

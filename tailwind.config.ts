@@ -10,7 +10,10 @@ const config: Config = {
       fonts: {
         opensans: ["Open Sans", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
-      },
+    },
+    colors: {
+      primary: "#FE6B01",
+    },
   },
  plugins: [require("daisyui")],
 };
