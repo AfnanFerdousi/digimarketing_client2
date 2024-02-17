@@ -43,7 +43,10 @@ const TopServices = () => {
                 <h4 className='pt-[1%] lg:md:text-3xl text-xl font-semibold text-[#514949]'>We are More than Just an Agency</h4>
             </div>
 
-            <div className='grid lg:md:grid-cols-3 grid-cols-2 gap-4 mt-10'>
+            <div
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                className='grid lg:md:grid-cols-3 grid-cols-2 gap-4 mt-10'>
                 {
                     services.map((service) => {
                         return (
@@ -54,7 +57,7 @@ const TopServices = () => {
                                 <h2 className="text-[#030303] font-semibold text-xl my-2">{service.name}</h2>
                                 <p className="font-normal text-[18px] pb-4">{service.description}</p>
 
-                                <Link href={`/service/${service.id}`} className="text-[#FE6B01] animate-bounce">view details</Link>
+                                <Link href={`/service_details/${service.id}`} className="text-[#FE6B01] animate-bounce">view details</Link>
                             </div>
                         )
                     })

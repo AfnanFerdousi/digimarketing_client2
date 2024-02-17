@@ -1,6 +1,7 @@
 import React, { useState, useEffect,createElement } from 'react';
 import Link from 'next/link';
 import axios from 'axios';
+import { useRouter } from 'next/router';
 import {
     TbSeo,
     TbSocial,
@@ -24,6 +25,8 @@ const iconComponent = {
 }
 const Services = () => {
     const [services, setServices] = useState([]);
+    const router = useRouter();
+
     const getServices = async () => {
         try {
             const res = await axios.get('/services.json');
@@ -47,11 +50,19 @@ const Services = () => {
                 <h4 className='pt-[1%] lg:md:text-3xl text-xl font-semibold text-[#514949]'>We are More than Just an Agency</h4>
             </div>
 
-            <div className='grid lg:md:grid-cols-2 grid-cols-1 gap-4 mt-10'>
+            <div
+                data-aos="fade-up"
+                data-aos-duration="2000"
+             className='grid lg:md:grid-cols-2 grid-cols-1 gap-4 mt-10'>
                 {
                     services.map((service) => {
                         return (
-                            <div key={service.id} className="bg-[#fff] p-4 text-start rounded-md cursor-pointer border-[1px] border-[#fff] hover:border-[#fe7a1a] transform transition-transform ease-in-out duration-200 flex item-center ">
+                            <div 
+                            key={service.id} 
+                            onClick={() => {
+                                router.push(`/service/${service.id}`)
+                            }}                            
+                            className="bg-[#fff] p-4 text-start rounded-md cursor-pointer border-[1px] border-[#fff] hover:border-[#fe7a1a] transition-all delay-200 ease-in-out duration-200 flex item-center ">
                                 <div className='text-[#fe7a1a] font-semibold lg:md:text-4xl text-3xl transform transition-transform ease-in-out p-2 text-center block'>
                                     {iconComponent[service.icon] ? createElement(iconComponent[service.icon]) : null}
                                 </div>

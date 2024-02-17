@@ -5,6 +5,8 @@ import Banner from './../components/home/Banner';
 import About from './../components/home/About';
 import TopServices from './../components/home/TopServices';
 import Services from './../components/home/Services';
+import Projects from './../components/home/Projects';
+import FAQ from './../components/home/FAQ';
 
 const Home = () => {
   return (
@@ -15,7 +17,9 @@ const Home = () => {
       <Banner />
       <About />
       <TopServices />
-      <Services/>
+      <Services />
+      <Projects/>
+      <FAQ/>
     </div>
   );
 };
