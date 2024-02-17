@@ -32,8 +32,8 @@ const Reviews = () => {
             <div
                 data-aos="fade-right"
             >
-                <h3 className='text-[#FE6B01] font-bold font-montserrat lg:md:text-4xl text-3xl'>Our Clients Are Real Nice</h3>
-                <h4 className='pt-[1%] lg:md:text-3xl text-xl font-semibold text-[#514949]'>We are More than Just an Agency</h4>
+                <h3 className='text-[#FE6B01] font-bold font-montserrat lg:md:text-4xl text-3xl'>Our Clients Words</h3>
+                <h4 className='pt-[1%] lg:md:text-3xl text-lg font-semibold text-[#514949]'>We are More than Just an Agency</h4>
             </div>
 
             <div
@@ -41,7 +41,6 @@ const Reviews = () => {
                 data-aos-duration="2000"
                 className="mt-10">
                 <Swiper
-                    slidesPerView={3}
                     spaceBetween={30}
                     pagination={{
                         clickable: true,
@@ -53,6 +52,23 @@ const Reviews = () => {
                     loop={true}
                     modules={[Pagination]}
                     className="mySwiper"
+                    breakpoints={{
+                        // When window width is <= 640px
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 10
+                        },
+                        // When window width is <= 768px
+                        768: {
+                            slidesPerView: 1,
+                            spaceBetween: 20
+                        },
+                        // When window width is <= 1024px
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 30
+                        }
+                    }}
                 >
                     {
                         reviews.map((review, index) => {
@@ -60,7 +76,7 @@ const Reviews = () => {
                                 <SwiperSlide key={index}>
                                     <div className="bg-[#fff] py-8 px-4 rounded-xl flex flex-col items-center h-[55vh]">
                                         <div className="avatar">
-                                            <div className="w-24 rounded-full">
+                                            <div className="lg:md:w-24 w-16 rounded-full">
                                                 <Image
                                                     src={review.image}
                                                     alt={review.name}
@@ -68,8 +84,8 @@ const Reviews = () => {
                                                     height={150} />
                                             </div>
                                         </div>
-                                        <h2 className="text-lg font-semibold text-center text-[#FE6B01] py-4">{review.name}</h2>
-                                        <p className="text-[16px] text-[#333]">{review?.review}</p>
+                                        <h2 className="lg:md:text-lg text-[18px] font-semibold text-center text-[#FE6B01] py-4">{review.name}</h2>
+                                        <p className="lg:md:text-[16px] text-[14px] text-[#333]">{review?.review}</p>
 
                                     </div>
                                 </SwiperSlide>

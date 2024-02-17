@@ -11,7 +11,7 @@ const Banner = () => {
     }, []);
 
     return (
-        <div className='lg:md:flex lg:md:flex-row-reverse items-center justify-between max-w-[1320px] lg:md:px-4 px-4 mx-auto h-[90vh] my-auto'>
+        <div className='lg:md:flex lg:md:flex-row-reverse items-center justify-between max-w-[1400px] lg:md:px-4 px-4 mx-auto h-[90vh] my-auto'>
             <div data-aos="fade-left"
                 data-aos-anchor="#example-anchor"
                 data-aos-offset="500"

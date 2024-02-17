@@ -47,7 +47,7 @@ const Services = () => {
                 data-aos="fade-right"
             >
                 <h3 className='text-[#FE6B01] font-bold font-montserrat lg:md:text-4xl text-3xl'>Services We Provide</h3>
-                <h4 className='pt-[1%] lg:md:text-3xl text-xl font-semibold text-[#514949]'>We are More than Just an Agency</h4>
+                <h4 className='pt-[1%] lg:md:text-3xl text-lg font-semibold text-[#514949]'>We are More than Just an Agency</h4>
             </div>
 
             <div
@@ -66,7 +66,7 @@ const Services = () => {
                                 <div className='text-[#fe7a1a] font-semibold lg:md:text-4xl text-3xl transform transition-transform ease-in-out p-2 text-center block'>
                                     {iconComponent[service.icon] ? createElement(iconComponent[service.icon]) : null}
                                 </div>
-                                <h2 className="text-xl font-semibold text-[#333] w-full h-full flex items-center ">{service.category}</h2>
+                                <h2 className="lg:md:text-xl text-[18px] font-semibold text-[#333] w-full h-full flex items-center ">{service.category}</h2>
                             </div>
                         )
                     })
