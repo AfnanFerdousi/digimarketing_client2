@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "category": "Search Engine Optimization (SEO)",
+        "name": "On-Page SEO",
+        "description": "Optimize web pages for better search engine ranking.",
+        "icon": "FaSearch"
+    },
+    {
+        "id": 2,
+        "category": "Social Media Advertising",
+        "name": "Facebook Ads",
+        "description": "Targeted ads on Facebook and Instagram for increased engagement.",
+        "icon": "FaFacebook"
+    },
+    {
+        "id": 3,
+        "category": "Email Marketing",
+        "name": "Email Campaign Strategy",
+        "description": "Plan and execute targeted email campaigns for conversions.",
+        "icon": "FaEnvelope"
+    },
+    {
+        "id": 4,
+        "category": "Home website and Sales Channel Management",
+        "name": "DTC Website Development",
+        "description": "Design and build optimized e-commerce websites.",
+        "icon": "FaHome"
+    },
+    {
+        "id": 5,
+        "category": "Analytics and Reporting",
+        "name": "Data Analysis",
+        "description": "Analyze data to uncover actionable insights.",
+        "icon": "FaChartBar"
+    },
+    {
+        "id": 6,
+        "category": "Motion Graphics, Animation & Video Editing",
+        "name": "Explainer Videos",
+        "description": "Create animated videos to explain concepts effectively.",
+        "icon": "FaVideo"
+    }
+]

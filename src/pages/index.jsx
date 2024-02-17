@@ -3,6 +3,7 @@ import Head from 'next/head';
 import MainLayout from './../layout/MainLayout';
 import Banner from './../components/home/Banner';
 import About from './../components/home/About';
+import TopServices from './../components/home/TopServices';
 import Services from './../components/home/Services';
 
 const Home = () => {
@@ -13,7 +14,8 @@ const Home = () => {
       </Head>
       <Banner />
       <About />
-      <Services />
+      <TopServices />
+      <Services/>
     </div>
   );
 };
