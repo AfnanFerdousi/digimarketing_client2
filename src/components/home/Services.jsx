@@ -42,7 +42,7 @@ const Services = () => {
     }, [])
     console.log(services)
     return (
-        <div className='max-w-[1320px] w-full mx-auto lg:md:px-4 px-4 lg:md:mt-28 mt-[15vh]'>
+        <div className='max-w-[1400px] w-full mx-auto lg:md:px-4 px-4 lg:md:mt-28 mt-[15vh]'>
             <div
                 data-aos="fade-right"
             >

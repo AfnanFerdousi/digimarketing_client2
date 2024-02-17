@@ -7,7 +7,7 @@ const Projects = () => {
          data-aos="fade-up"
          data-aos-duration="2000"
          className='bg-[#fe7a1a] lg:md:mt-[30%] mt-[15vh] rounded-md px-6 pb-6 pt-16'>
-            <div className="max-w-[1320px] w-full mx-auto lg:md:px-4 px-4 relative rounded-md">
+            <div className="max-w-[1400px] w-full mx-auto lg:md:px-4 px-4 relative rounded-md">
                 <ReactPlayer
                     url='https://www.youtube.com/watch?v=q-Hx0xL-llk'
                     height="60vh"
