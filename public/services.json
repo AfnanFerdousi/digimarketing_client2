@@ -6,26 +6,8 @@
         "services": [
             {
                 "id": 1,
-                "name": "On-Page SEO",
-                "description": "Optimizing individual web pages to rank higher and earn more relevant traffic in search engines. Includes optimizing content, meta tags, URL structure, and internal linking.",
-                "icon": "FaSearch"
-            },
-            {
-                "id": 2,
-                "name": "Off-Page SEO",
-                "description": "Improving the website's reputation and authority by building quality backlinks from other websites. Techniques include guest blogging, social bookmarking, and influencer outreach.",
-                "icon": "FaSearch"
-            },
-            {
-                "id": 3,
-                "name": "Keyword Research",
-                "description": "Identifying the right keywords to target based on search volume, relevance, and competition. Helps in creating content and optimizing website pages for better search engine rankings.",
-                "icon": "FaSearch"
-            },
-            {
-                "id": 4,
-                "name": "SEO Audits",
-                "description": "Comprehensive analysis of a website's SEO performance to identify strengths, weaknesses, and areas for improvement. Involves technical, on-page, and off-page aspects of SEO.",
+                "name": "SEO Service",
+                "description": "Comprehensive SEO service covering On-Page & Off-Page optimization, Keyword Research, and Audits.",
                 "icon": "FaSearch"
             }
         ]
