@@ -10,13 +10,15 @@ const Navbar = () => {
         <div className='bg-[#fff] shadow-xl shadow-[#eeeeee]'>
             <nav className='flex items-center justify-between max-w-[1400px] w-full mx-auto font-montserrat relative lg:md:px-0 px-4'>
                 <div >
-                    <Image
-                        alt="logo"
-                        src={logo}
-                        width={130}
-                        height={80}
-                        className="lg:md:w-[65%] w-[90%] h-[80%]"
-                    />
+                    <Link href="/">
+                        <Image
+                            alt="logo"
+                            src={logo}
+                            width={130}
+                            height={80}
+                            className="lg:md:w-[65%] w-[90%] h-[80%]"
+                        />
+                    </Link>
                 </div>
 
                 <div className='lg:md:block hidden w-full'>
