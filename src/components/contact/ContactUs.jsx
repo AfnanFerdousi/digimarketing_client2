@@ -3,7 +3,6 @@ import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import { InlineWidget } from "react-calendly";
 
 const ContactUs = () => {
-
     return (
         <div className='max-w-[1400px] w-full mx-auto lg:md:px-4 px-4 lg:md:mt-10 mt-6 flex lg:md:flex-row flex-col items-center justify-center gap-x-4'>
             <div data-aos="fade-left"

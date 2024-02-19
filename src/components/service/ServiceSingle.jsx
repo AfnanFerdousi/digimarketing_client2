@@ -1,4 +1,3 @@
-import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import axios from 'axios';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
@@ -35,7 +34,7 @@ const ServiceSingle = () => {
 
     useEffect(() => {
         getServicesByCategoryId();
-    }, [id]); // Trigger effect whenever id changes
+    }, [id]);
 
     console.log(service)
     return (
