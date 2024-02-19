@@ -1,10 +1,11 @@
 import axios from 'axios';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';
+import { useRouter } from 'next/router'; 
 import React, { useState, useEffect } from 'react';
 
 const ServiceSingle = () => {
-    const { id } = useParams(); // Destructure id from useParams
+    const router = useRouter(); // Use useRouter hook
+    const { id } = router.query; 
     const [service, setService] = useState({});
     const [loading, setLoading] = useState(true);
 
