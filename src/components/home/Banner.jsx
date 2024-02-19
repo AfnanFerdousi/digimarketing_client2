@@ -10,6 +10,11 @@ const Banner = () => {
         setCounted(true);
     }, []);
 
+    const handleConsultationButtonClick = () => {
+        window.open('https://calendly.com/afnanferdousi550/free-consultancy', '_blank');
+    };
+
+
     return (
         <div className='lg:md:flex lg:md:flex-row-reverse items-center justify-between max-w-[1400px] lg:md:px-4 px-4 mx-auto h-[90vh] my-auto'>
             <div data-aos="fade-left"
@@ -51,7 +56,7 @@ const Banner = () => {
                     </div>
                 </div>
 
-                <button className='bg-[#FE6B01] font-inter font-medium lg:md:text-lg text-[14px] text-[#fff] py-3 px-4 rounded-md mt-8 flex items-center gap-x-2'>Give your imagination a shot <span className='lg:md:text-2xl text-xl'><BsStars /></span></button>
+                <button onClick={handleConsultationButtonClick} className='bg-[#FE6B01] font-inter font-medium lg:md:text-lg text-[14px] text-[#fff] py-3 px-4 rounded-md mt-8 flex items-center gap-x-2'>Get Free Consultation <span className='lg:md:text-2xl text-xl'><BsStars /></span></button>
             </div>
             
         </div>

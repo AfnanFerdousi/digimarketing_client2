@@ -33,9 +33,6 @@ const Navbar = () => {
                             <Link href="/projects">Projects</Link>
                         </li>
                         <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
-                            <Link href="/testimonials">Testimonials</Link>
-                        </li>
-                        <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
                             <Link href="/contact">Contact</Link>
                         </li>
                     </ul>
@@ -55,9 +52,6 @@ const Navbar = () => {
                                 </li>
                                 <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
                                     <Link href="/projects">Projects</Link>
-                                </li>
-                                <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
-                                    <Link href="/testimonials">Testimonials</Link>
                                 </li>
                                 <li className='hover:text-[#FE6B01] delay-200 transition-colors'>
                                     <Link href="/contact">Contact</Link>
