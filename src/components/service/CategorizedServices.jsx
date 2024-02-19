@@ -47,12 +47,6 @@ const CategorizedServices = () => {
     }, [id])
     console.log(services)
 
-    const mapService = !loading && services.sub_categories && services.sub_categories;
-    console.log(mapService)
-
-    const servicesPerRow = 3;
-
-
     return (
         <div className='max-w-[1400px] w-full mx-auto lg:md:px-4 px-4 lg:md:mt-10 mt-6'>
             <div data-aos="fade-right">
@@ -61,23 +55,19 @@ const CategorizedServices = () => {
             </div>
             {!loading &&
                 <div data-aos="fade-up" data-aos-duration="2000" className="mt-10">
-                    {mapService.map((subCategory, subIndex) => (
-                        <div key={subCategory.id}>
-                            <h4 className="text-xl font-semibold text-[#514949] my-6">{subCategory.name}</h4>
                             <div className="grid lg:md:grid-cols-3 gap-4">
-                                {subCategory.services.map((service, serviceIndex) => (
+                                {services.services.map((service, serviceIndex) => (
                                     <div key={service.id} className="bg-[#fff] p-4 text-center rounded-md cursor-pointer hover:scale-105 transform transition-transform ease-in-out duration-200 hover:animate-bounce flex flex-col space-between items-center">
                                         <div className="text-[#FE6B01] font-semibold text-3xl transform transition-transform ease-in-out p-2 text-center w-full flex justify-center">
                                             {iconComponent[service.icon] && createElement(iconComponent[service.icon])}
                                         </div>
-                                        <h2 className="text-[#030303] font-semibold text-xl my-2">{service.name}</h2>
-                                        <p className="text-[14px] font-normal">{service.description}</p>
-                                        <Link href={`/service_details/${service.id}`} className="text-[#FE6B01]">View details</Link>
+                                        <h2 className="text-[#030303] font-semibold text-xl mt-2">{service.name}</h2>
+                                        {service?.subCat && <h2 className="text-[#FE6B01] font-semibold text-[14px]">{service.subCat}</h2>}
+                                        <p className="text-[14px] font-normal mt-3">{service.description}</p>
+                                        <Link href={`/service/details/${service.id}`} className="text-[#FE6B01]">View details</Link>
                                     </div>
                                 ))}
                             </div>
-                        </div>
-                    ))}
                 </div>
             }
         </div>

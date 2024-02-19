@@ -57,7 +57,7 @@ const TopServices = () => {
                                 <h2 className="text-[#030303] font-semibold lg:md:text-xl text-[18px] my-2">{service.name}</h2>
                                 <p className="font-normal lg:md:text-[18px] text-[14px] pb-4">{service.description}</p>
 
-                                <Link href={`/service_details/${service.id}`} className="text-[#FE6B01]">view details</Link>
+                                <Link href={`/service/details/${service.id}`} className="text-[#FE6B01]">view details</Link>
                             </div>
                         )
                     })
